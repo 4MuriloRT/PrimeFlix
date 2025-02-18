@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route} from "react-router-dom"
 
-import Header from "./components/Header";
+import Header from "./components/Header/index.js";
 
-import Home from "./pages/Home";
-import Filme from "./pages/Filme";
+import Home from "./pages/Home/index.js";
+import Filme from "./pages/Filme/index.js";
 
-import Erro from "./pages/Erro";
+import Erro from "./pages/Erro/index.js";
 function RoutesApp(){
     return(
         <BrowserRouter>

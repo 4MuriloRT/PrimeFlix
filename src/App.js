@@ -1,4 +1,4 @@
-import RoutesApp from "./routes";
+import RoutesApp from "./routes.js";
 function App() {
   return (
     <div className="App">
