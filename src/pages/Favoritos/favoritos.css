@@ -1,53 +1,98 @@
-.meus-filmes{
+.meus-filmes {
     margin-top: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 16px; 
 }
 
-.meus-filmes h1{
+.meus-filmes h1 {
     margin-bottom: 14px;
+    font-size: 22px;
+    text-align: center;
 }
 
-.meus-filmes span{
-    font-size: 18px;
+.meus-filmes span {
+    font-size: 16px;
+    text-align: center;
 }
 
-.meus-filmes ul{
-    width: 720px;
+.meus-filmes ul {
+    width: 100%; 
+    max-width: 720px; 
+    padding: 0;
 }
 
-.meus-filmes ul li{
+.meus-filmes ul li {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 14px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #f5f5f5;
+    flex-wrap: wrap;
 }
 
-.meus-filmes div{
+.meus-filmes ul li span {
+    flex: 1;
+    font-size: 16px;
+}
+
+.meus-filmes div {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px; 
 }
 
-.meus-filmes div a{
+.meus-filmes div a {
     text-decoration: none;
     color: #116feb;
-    margin-right: 14px;
+    font-size: 14px;
 }
 
-.meus-filmes button{
-    font-size: 10px;
+.meus-filmes button {
+    font-size: 12px;
     border: 0;
     outline: none;
-    padding: 12px;
+    padding: 8px 12px;
     border-radius: 4px;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 0.3s;
+    background-color: #ff4d4d;
+    color: white;
+    font-weight: bold;
 }
 
-.meus-filmes button:hover{
+.meus-filmes button:hover {
     background-color: #db5555;
-    color: #fff;
+}
+
+@media (max-width: 480px) {
+    .meus-filmes h1 {
+        font-size: 20px;
+    }
+
+    .meus-filmes ul li {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+    }
+
+    .meus-filmes div {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 8px;
+    }
+
+    .meus-filmes div a {
+        font-size: 13px;
+    }
+
+    .meus-filmes button {
+        font-size: 12px;
+        padding: 10px;
+    }
 }
