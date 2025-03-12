@@ -46,3 +46,25 @@
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
+
+.load-more{
+    display: flex;
+    align-items: cente;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.load-more button{
+    padding: 5px;
+    font-size: 16px;
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.load-more button:hover{
+    background-color: #116feb;
+    color: #fff;
+}
